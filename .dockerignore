@@ -1,0 +1,33 @@
+# Python-specific
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.Python
+
+# Virtual environments
+**/venv/
+**/env/
+**/ENV/
+
+# Version control and IDE files
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Local configuration
+.env
+.env.local
+
+# Database files
+#.db
+notes.db
+
+# OS-specific files
+.DS_Store
+Thumbs.db
