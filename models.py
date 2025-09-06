@@ -15,7 +15,7 @@ class Note(db.Model):
 
     def to_dict(self):
         local_tz = pytz.timezone('America/California')
-        local_time = self.created_at.replace(tzinfo=pytz.utc).astimezone(local_tz)
+        local_time = self.created_at.replace(tzinfo=pytz.utc).asimezone(local_tz)
         return {
             'id': self.id,
             'title': self.title,
