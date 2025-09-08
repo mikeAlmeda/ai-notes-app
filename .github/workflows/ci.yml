@@ -33,7 +33,7 @@ jobs:
         - name: Test Docker container
           run: |
             docker run -d -p 5000:5000 --name test-container ai-notes-app
-            sleep 10
+            sleep 8
             curl -f hhtp://localhost:5000/health || exit 1
             docker stop test-container
             docker rm test-container
